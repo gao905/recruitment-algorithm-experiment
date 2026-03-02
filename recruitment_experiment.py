@@ -245,9 +245,9 @@ elif st.session_state.current_step == 3:
     # 简历信息填写（核心用于偏见组的变量操控）
     name = st.text_input("虚拟姓名（可随意填写，仅用于模拟）", placeholder="例如：张三")
     gender_resume = st.radio("简历性别：", options=["男", "女"], horizontal=True)
-    education_resume = st.radio("最高学历：", options=["本科", "硕士"], horizontal=True)
-    school_type = st.radio("毕业院校类型：", options=["985/211院校", "普通本科院校"], horizontal=True)
-    work_exp = st.radio("相关工作/实习经验：", options=["1年及以上", "无相关经验"], horizontal=True)
+    education_resume = st.radio("最高学历：", options=["专科及以下","本科", "硕士"], horizontal=True)
+    school_type = st.radio("毕业院校类型：", options=["985/211院校", "普通本科院校","专科院校"], horizontal=True)
+    work_exp = st.radio("相关工作/实习经验：", options=["1年以下","1年及以上", "无相关经验"], horizontal=True)
     skill_desc = st.text_area("个人技能与优势描述（可随意填写）", placeholder="例如：具备市场调研、新媒体运营能力，良好的沟通协调能力")
 
     # 保存简历信息
